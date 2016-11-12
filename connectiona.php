@@ -4,7 +4,7 @@ $password = "new-password";
 $hostname = "localhost"; 
 
 //connection to the database
-$dbhandle = mysql_connect($hostname, $username, $password) 
+$dbhandle = mysqli_connect($hostname, $username, $password, "enablers");
   or die("Unable to connect to MySQL");
 echo "Connected to MySQL<br>";
 ?>
