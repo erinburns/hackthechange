@@ -16,7 +16,7 @@ if ($link->connect_error) {
 } 
 
 // sql to create table
-$sql = "CREATE TABLE enablers (
+$sql = "CREATE TABLE reports (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 message text,
 attachmenturl text,
@@ -41,7 +41,7 @@ if($link === false){
 $message = mysqli_real_escape_string($link, $_POST['message']);
  
 // attempt insert query execution
-$sql = "INSERT INTO enablers (message) VALUES ('$message')";
+$sql = "INSERT INTO reports (message) VALUES ('$message')";
 if(mysqli_query($link, $sql)){
     echo "Records added successfully.";
 } else{
