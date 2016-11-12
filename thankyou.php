@@ -1,7 +1,36 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-include connection.php;
+//include connection.php;
+
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "enablers";
+
+// Create connection
+$link = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($link->connect_error) {
+    die("Connection failed: " . $link->connect_error);
+} 
+
+// sql to create table
+$sql = "CREATE TABLE enablers (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+message text,
+attachmenturl text,
+reg_date TIMESTAMP
+)";
+
+if ($link->query($sql) === TRUE) {
+    //echo "Table MyGuests created successfully";
+} else {
+    //echo "Error creating table: " . $conn->error;
+}
+
+// $conn->close();
+
 
 // Check connection
 if($link === false){
