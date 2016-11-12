@@ -7,13 +7,15 @@ $dbconn4 = pg_connect($conn_string);
 //connect to a database named "test" on the host "sheep" with a username and password
 
 
-// sql to create table
-$sql = "CREATE TABLE IF NOT EXISTS app_user (
-
-  username varchar(45) NOT NULL,  
- password varchar(450) NOT NULL,  
-  enabled integer NOT NULL DEFAULT '1',  
-  PRIMARY KEY (user_id)  
+$sql="CREATE TABLE users (
+id varchar(5),
+name varchar(20), 
+middle varchar(20),
+last varchar(20),
+address varchar(50),
+expir date,
+pass varchar(20),
+PRIMARY KEY(id)
 )";
 
 
