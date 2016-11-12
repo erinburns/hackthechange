@@ -8,19 +8,15 @@ $dbconn4 = pg_connect($conn_string);
 
 
 // sql to create table
-$sql = "CREATE TABLE MyGuests (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP
+$sql = "CREATE TABLE IF NOT EXISTS app_user (
+
+  username varchar(45) NOT NULL,  
+ password varchar(450) NOT NULL,  
+  enabled integer NOT NULL DEFAULT '1',  
+  PRIMARY KEY (user_id)  
 )";
 
-if ($conn->query($sql) === TRUE) {
-    echo "Table MyGuests created successfully";
-} else {
-    echo "Error creating table: " . $conn->error;
-}
+
 
 ?>
 
