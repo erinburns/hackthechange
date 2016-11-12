@@ -1,0 +1,15 @@
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+ font-color: white;
+  
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+body {
+  background: url("../images/bg-image.png");
+
+}
