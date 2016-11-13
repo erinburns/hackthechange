@@ -14,15 +14,14 @@
 }
 
 .navbartop {
-  background-color: black;
-
+  background-color: #5E5E5E;
 }
 .jumboback {
   font-color: white;
 }
 
 .buttonhomeR {
-  min-width: 3.5em;
+  min-width: 14em;
 }
 
 body {
@@ -32,7 +31,10 @@ body {
 }
 
 footer {
-  min-width: 10.5em;
-  background-color: black;
-
+  min-height: 5em;
+  background-color: #5E5E5E;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
 }
