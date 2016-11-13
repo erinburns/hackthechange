@@ -31,11 +31,13 @@ body {
 }
 
 footer {
-  min-width: 10.5em;
-  background-color: black;
-
+  min-height: 5em;
+  background-color: #5E5E5E;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
 }
-
 
 /* begin styles for header navigation */
 
