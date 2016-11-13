@@ -1,9 +1,0 @@
-version: '2'
-services:
-  lamp:
-    image: tutum/lamp
-    volumes:
-      - .:/app
-    ports:
-      - "80:80"
-      - "3306:3306"

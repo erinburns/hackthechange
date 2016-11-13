@@ -2,7 +2,7 @@
   text-align: center;
   background-color: transparent;
  font-color: white;
-  
+
 }
 
 .homebutton{
@@ -14,27 +14,50 @@
 }
 
 .navbartop {
-  background-color: #5E5E5E;
+  background-color: black;
+
 }
 .jumboback {
   font-color: white;
 }
 
 .buttonhomeR {
-  min-width: 14em;
+  min-width: 3.5em;
 }
 
 body {
   background: url("../images/bg-image.png");
   color: white;
-
 }
 
 footer {
-  min-height: 5em;
-  background-color: #5E5E5E;
-  bottom: 0;
-  display: block;
-  position: absolute;
-  width: 100%;
+  min-width: 10.5em;
+  background-color: black;
+
 }
+
+
+/* begin styles for header navigation */
+
+header {
+  margin-top: 20px;
+  margin-bottom: 15%;
+  min-width: 85%;
+
+}
+
+.logo {
+  width: 500px;
+}
+
+.helpbtn, .closebtn {
+  float: right;
+  padding-left: 100px;
+
+}
+
+.helpbtn {
+  padding-left: 5%;
+}
+
+/* end header navigation styling */
