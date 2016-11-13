@@ -4,12 +4,35 @@
  font-color: white;
   
 }
+
+.homebutton{
+  align: center;
+}
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
 
+.navbartop {
+  background-color: black;
+
+}
+.jumboback {
+  font-color: white;
+}
+
+.buttonhomeR {
+  min-width: 3.5em;
+}
+
 body {
   background: url("../images/bg-image.png");
+  color: white;
+
+}
+
+footer {
+  min-width: 10.5em;
+  background-color: black;
 
 }
