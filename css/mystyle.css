@@ -28,6 +28,7 @@
 body {
   background: url("../images/bg-image.png");
   color: white;
+
 }
 
 footer {
@@ -62,3 +63,13 @@ header {
 }
 
 /* end header navigation styling */
+
+
+/* footer styling */
+.blankfooter {
+  background-color: #5E5E5E;
+  height: 25%;
+}
+
+
+/* end footer styling */
