@@ -2,7 +2,7 @@
   text-align: center;
   background-color: transparent;
  font-color: white;
-  
+
 }
 
 .homebutton{
@@ -28,7 +28,6 @@
 body {
   background: url("../images/bg-image.png");
   color: white;
-
 }
 
 footer {
@@ -36,3 +35,29 @@ footer {
   background-color: black;
 
 }
+
+
+/* begin styles for header navigation */
+
+header {
+  margin-top: 20px;
+  margin-bottom: 15%;
+  min-width: 85%;
+
+}
+
+.logo {
+  width: 500px;
+}
+
+.helpbtn, .closebtn {
+  float: right;
+  padding-left: 100px;
+
+}
+
+.helpbtn {
+  padding-left: 5%;
+}
+
+/* end header navigation styling */
