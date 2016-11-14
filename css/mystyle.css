@@ -25,19 +25,30 @@
   min-width: 3.5em;
 }
 
+#message, #exampleInputPassword1 {
+  width: 65%;
+  margin-left: 2%;
+}
+
+
 body {
   background: url("../images/bg-image.png");
   color: white;
 
 }
 
+main {
+  overflow:hidden;
+  margin-left: 2%;
+}
+
 footer {
-  min-height: 5em;
+  min-height: 7em;
   background-color: #5E5E5E;
   bottom: 0;
   display: block;
-  position: absolute;
   width: 100%;
+  text-align: center;
 }
 
 /* begin styles for header navigation */
@@ -65,13 +76,3 @@ header {
 }
 
 /* end header navigation styling */
-
-
-/* footer styling */
-.blankfooter {
-  background-color: #5E5E5E;
-  height: 25%;
-}
-
-
-/* end footer styling */

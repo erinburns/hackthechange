@@ -23,12 +23,14 @@
   </head>
 
   <body>
+
     <header>
       <img src="images/speaksafe-logo-small.png" class="logo" width="500px">
       <img src="images/help-me.png" class="helpbtn">
       <img src="images/close-site.png" class="closebtn">
-
     </header>
+
+    <main>
       <h1>Report an incident</h1>
       <form action="thankyou.php" method="post">   <!-- Remember to enter URI -->
   <div class = "col-md-6 ">
@@ -36,24 +38,22 @@
 
 
       <h3>Let us know what happened. And leave a message after the tone. The number to dial is 080018221721</h3>
-     <p>
-       You can tell us whatever you want, but only the right is guide to some useful informa
-    </p>
-
-    <div class="form-group">
-    <label for="exampleInputPassword1">Enter number you like us to call you back on</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter number">
-  </div>
+      <p>You can tell us whatever you want. See the list on the right for some key information to include.</p>
 
       <div class="form-group">
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
+        <label for="exampleInputPassword1">Enter number you like us to call you back on</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter number">
+      </div>
 
+
+        <div class="form-group">
+            <div class='input-group date' id='datetimepicker2'>
+                <input type='text' class="form-control">
+                <span class="input-group-addon"></span>
+                <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+        </div>
+      </div>
         <script type="text/javascript">
             $(function () {
                 $('#datetimepicker2').datetimepicker({
@@ -64,8 +64,8 @@
 
      <div class="form-group">
 
-    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter time (e.g. Morning, afternoon, Evening)">
-  </div>
+       <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter time (e.g. Morning, afternoon, Evening)">
+     </div>
 
     <form action="thankyou.php" method="post">   <!-- Remember to enter URI -->
         <div class="form-group">
@@ -74,28 +74,23 @@
         </div>
 
         <div class="form-group">
-         <label for="exampleInputFile">File upload</label>
-         <input type="file" id="exampleInputFile" name="attachment">
-         <p class="help-block">Upload an image, video, or audio file.</p>
+           <label for="exampleInputFile">File upload</label>
+           <input type="file" id="exampleInputFile" name="attachment">
+           <p class="help-block">Upload an image, video, or audio file.</p>
         </div>
 
         <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-     </div>
+    </form>
 
-
-    <div class = "col-md-6 text-center">
-    </div>
-    </div>
-
-<footer>
-  <div class="blankfooter"> blank footer div</div>
-</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+  </main>
 
+  <footer>
+    <p>Created as part of the Hack the Change Hackathon</p>
+  </footer>
 
   </body>
 </html>
